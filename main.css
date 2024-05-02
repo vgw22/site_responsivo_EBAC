@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(blue, red);
+    padding: 16px 0;
+    border-bottom: 1px solid #000;
+    margin-bottom: 24px;
+}
+
+header h1 {
+    font-family: "Jersey 25", sans-serif;
+    font-size: 45px;
+    font-style: italic;
+}
+
+header .container,
+#about-store {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    display: inline;
+    padding-left: 16px;
+}
+
+header ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#about-store {
+    padding-bottom: 32px;
+    align-items: flex-start;
+    border-bottom: 2px solid #ccc;
+}
+
+#about-store h2 {
+    font-family: "Jersey 25", sans-serif;
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+#about-store img {
+    padding-right: 24px;
+}
+
+#products {
+    padding-top: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-rows: auto auto;
+}
+
+#products h2 {
+    font-family: "Jersey 25", sans-serif;
+    font-size: 30px;
+    grid-column: 1 / -1;
+}
+
+#products ul li {
+    list-style: none;
+}
+
+#products p {
+    font-size: 1em;
+    padding: 6px 0px 6px 0px;
+}
+
+#products button {
+    display: flex;
+    padding: 8px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    border-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    justify-content: center;
+    margin-top: 4px;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: rgb(0, 255, 0);
+    border: none;
+}
