@@ -115,11 +115,20 @@ button:hover {
     }
 
     #about-store {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #about-store h2 {
+        text-align: center;
     }
 
     #about-store img {
         margin-bottom: 16px;
+        max-width: 100%;
+        height: auto;
     }
 
     #products {
