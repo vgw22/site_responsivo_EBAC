@@ -5,10 +5,6 @@
     font-family: "Raleway", sans-serif;
 }
 
-html {
-    overflow-x: hidden;
-}
-
 .container {
     max-width: 1024px;
     width: 100%;
@@ -16,16 +12,13 @@ html {
 }
 
 header {
-    background: linear-gradient(blue, red);
     padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(blue, rgb(255, 0, 0));
     border-bottom: 1px solid #000;
-    margin-bottom: 24px;
-}
-
-header h1 {
-    font-family: "Jersey 25", sans-serif;
-    font-size: 45px;
-    font-style: italic;
+    margin-bottom: 16px;
 }
 
 header .container,
@@ -35,51 +28,47 @@ header .container,
     align-items: center;
 }
 
+header h1 {
+    font-family: "Jersey 25", sans-serif;
+    font-style: italic;
+    font-size: 45px;
+}
+
 header ul li {
-    list-style: none;
     display: inline;
-    padding-left: 16px;
+    list-style: none;
+    margin-right: 10px;
 }
 
 header ul li a {
-    color: #fff;
-    font-size: 18px;
     text-decoration: none;
+    color: #fff;
     font-weight: bold;
 }
 
 #about-store {
     padding-bottom: 32px;
     align-items: flex-start;
-    border-bottom: 2px solid #ccc;
-}
-
-#about-store h2 {
-    font-family: "Jersey 25", sans-serif;
-    font-size: 30px;
-    margin-bottom: 16px;
+    border-bottom: 1px solid #ccc;
 }
 
 #about-store img {
-    padding-right: 24px;
+    margin-right: 32px;
 }
 
-#products {
-    padding-top: 16px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    grid-template-rows: auto auto;
+#about-store h2 {
+    margin-bottom: 16px;
+    font-family: "Jersey 25", sans-serif;
+    font-size: 32px;
+    font-style: italic;
 }
 
 #products h2 {
     font-family: "Jersey 25", sans-serif;
-    font-size: 30px;
+    font-size: 32px;
+    font-style: italic;
+    margin-top: 16px;
     grid-column: 1 / -1;
-}
-
-#products ul li {
-    list-style: none;
 }
 
 #products p {
@@ -105,4 +94,10 @@ button:hover {
     transform: scale(1.05);
     background-color: rgb(0, 255, 0);
     border: none;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    column-gap: 1%;
 }
