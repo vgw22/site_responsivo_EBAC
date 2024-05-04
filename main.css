@@ -164,5 +164,6 @@ button:hover {
 
     .produtos button {
         width: auto;
+        max-width: 100%;
     }
 }
