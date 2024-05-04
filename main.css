@@ -104,6 +104,12 @@ button:hover {
     border: none;
 }
 
+.produtos img {
+    max-width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
 @media screen and (max-width: 640px) {
     
     .container {
