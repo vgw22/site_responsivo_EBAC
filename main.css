@@ -77,6 +77,7 @@ header ul li a {
     margin-top: 16px;
     grid-column: 1 / -1;
     text-decoration: underline;
+    margin-bottom: 16px;
 }
 
 #products p {
@@ -143,7 +144,7 @@ button:hover {
 
     #products h2 {
         text-align: center;
-        margin-bottom: 32px;
+        margin-bottom: 24px;
     }
 
     #products button {
@@ -212,7 +213,7 @@ button:hover {
     }
 
     #products h2 {
-        margin-bottom: 32px;
+        margin-bottom: 24px;
     }
 
     #products button {
